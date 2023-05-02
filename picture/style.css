@@ -1,0 +1,55 @@
+#wrapper {
+    margin-left: 13%;
+}
+
+#wrapper {
+    margin-left: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info_picture {
+  display: flex;
+}
+
+#picture_container {
+  width: 60%;
+  margin: 2rem;
+}
+
+#title_photographer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+#title {
+  font-size: 2rem;
+  margin-bottom: 0.9rem;
+  margin-left: 1.4rem;
+  font-family: 'Aboreto', display;
+}
+
+#photographe {
+  font-size: 0.9rem;
+}
+
+#container {
+  text-align: center;
+  font-family: 'Aref Ruqaa Ink', serif;
+}
+
+#titlePicture {
+  font-size: 3rem;
+  text-decoration: underline;
+  font-family: 'Zen Kurenaido', sans-serif;
+  margin: 5rem 2rem;
+}
+
+#pictureDay {
+  margin-bottom: 3rem;
+  box-shadow: 0.3rem 0.3rem 1.2rem;
+}
