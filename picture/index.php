@@ -33,7 +33,5 @@ include "../template/header.html"
 </body>
 
 
-
-<script src="../JS/app.js"></script>
 <script src="../JS/picture.js"></script>
 
