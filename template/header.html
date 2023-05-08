@@ -16,17 +16,36 @@
     <link href="https://fonts.bunny.net/css?family=biorhyme:700" rel="stylesheet" />
 </head>
 
+<body>
+    
+
 <section id="Home">
     
     <img id="nasaLogo" src="../image/nasa-color.svg" alt="logo">
-    <h1 id="home_Title">NasaAPI-Log</h1>
 
     <nav id="navbar_Home">
-        <ul id="navbar_List_Home">
-            <span class="home_List_Container"><img id="house_home_picture" src="../image/house.svg"><li class="list_Home"><a class="link_home" href="#">Home</a></li></span>
-            <span class="home_List_Container"><img id="house_home_picture" src="../image/images.svg" alt=""><li class="list_Home"><a href="../picture/index.php" class="link_home">Picture of the Day</a></li></span>
-            <span class="home_List_Container"><img id="house_home_picture" src="../image/globe-asia-australia.svg"><li class="list_Home"><a class="link_home" href="../planet/index.php">Planet</a></li></span>
-        </ul>
+        <div id="hiddenNavbar" class="hiddenNavbar">
+            <div  id="navbar_toggle">
+            <h1 id="home_Title">NasaAPI-Log</h1>
+                <ul id="navbar_List_Home">
+                    <span class="home_List_Container"><img id="house_home_picture" src="../image/house.svg"><li class="list_Home"><a class="link_home" href="#">Home</a></li></span>
+                    <span class="home_List_Container"><img id="house_home_picture" src="../image/images.svg" alt=""><li class="list_Home"><a href="../picture/index.php" class="link_home">Picture of the Day</a></li></span>
+                    <span class="home_List_Container"><img id="house_home_picture" src="../image/globe-asia-australia.svg"><li class="list_Home"><a class="link_home" href="../planet/index.php">Planet</a></li></span>
+                </ul>
+            </div>
+        </div>
+
+        <button class="toggle-button" id="button" onclick="navbar()">
+          <img src="../image/list.svg" alt="">
+        </button>
+            
+        
     </nav>
 </section>
+
+<script src="../template/screen.js"></script>
+
+</body>
+
+</html>
 

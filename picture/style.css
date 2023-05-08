@@ -49,3 +49,21 @@
   margin-bottom: 3rem;
   box-shadow: 0.3rem 0.3rem 1.2rem;
 }
+
+@media (max-width : 1310px){
+  #wrapper{
+    margin: 0;
+  }
+
+  #info_picture {
+    margin-bottom: 8rem;
+  }
+
+  #pictureDay {
+    width: 80%;
+  }
+
+  .picture {
+    text-align: center;
+  }
+}
