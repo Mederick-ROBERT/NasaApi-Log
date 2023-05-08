@@ -42,6 +42,47 @@ $array = array(
                     She is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape.
                     NASA currently has two rovers (<strong>Curiosity and Perseverance</strong>), one lander (<strong>InSight</strong>), and one helicopter (<strong>Ingenuity</strong>) exploring the surface of Mars. ",
     ),
+    "4" => array(
+        'picture' => '../image/planet/Jupiter.png',
+        'name'=> 'Jupiter',
+        'type' => 'Gas Giant',
+        'year' => '4 333 Earth Days',
+        'distance' => '460 540 100 Km',
+        'size' => '11x Larger Than Earth',
+        'text' => "Fifth in line from the Sun, Jupiter is, by far, the largest planet in the solar system – more than twice as massive as all the other planets combined.
+                    Jupiter's familiar stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiter’s iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years. ",
+    ),
+    "5" => array(
+        'picture' => '../image/planet/Saturne.png',
+        'name'=> 'Saturne',
+        'type' => 'Gas Giant',
+        'year' => '10 759 Earth Days',
+        'distance' => '911 223 878 Km',
+        'size' => '9.1x Larger Than Earth',
+        'text' => "Saturn is the sixth planet from the Sun and the second-largest planet in our solar system.
+                    Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. It is not the only planet to have rings – made of chunks of ice and rock – but none are as spectacular or as complicated as Saturn's.
+                    Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.",
+    ),
+    "6" => array(
+        'picture' => '../image/planet/Uranus.png',
+        'name'=> 'Uranus',
+        'type' => 'Ice Giant',
+        'year' => '30 687 Earth Days',
+        'distance' => '1 920 414 614 Km',
+        'size' => '9.1x Larger Than Earth',
+        'text' => "Uranus—seventh planet from the Sun—rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side.
+                    It was the first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.",
+    ),
+    "7" => array(
+        'picture' => '../image/planet/Neptune.png',
+        'name'=> 'Neptune',
+        'type' => 'Ice Giant',
+        'year' => '60 190 Earth Days',
+        'distance' => '2 780 267 299 Km',
+        'size' => '3.9x Larger Than Earth',
+        'text' => "Dark, cold, and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system.
+                    More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye and the first predicted by mathematics before its discovery. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846.",
+    ),
 )
 
 ?>

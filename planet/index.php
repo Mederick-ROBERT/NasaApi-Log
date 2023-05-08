@@ -10,8 +10,9 @@ include "./array_info.php";
 
 <body>
     <section id="wrapper">
-        <button onclick="clickPlus()">changer+1</button>
-        <button onclick="clickMinus()">changer-1</button>
+        <img src="../image/left.svg" id="buttonMinus" onclick="clickMinus()">
+        
+        
         <?php
             for ($i = 0; $i < count($array); $i++):
         ?>
@@ -41,6 +42,8 @@ include "./array_info.php";
         <?php
             endfor;
         ?>
+        
+        <img src="../image/right.svg" id="buttonPlus" onclick="clickPlus()">
         
     </section>
 </body>

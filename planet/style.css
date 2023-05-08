@@ -21,6 +21,22 @@
     justify-content: space-around;
 }
 
+.planet_anim{
+    animation: myAnim 1.5s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .hidden{
     display: none;
 }
@@ -67,3 +83,17 @@
     font-size: 1.3rem;
     font-family: 'Aref Ruqaa Ink', serif;
 }
+
+/* arrow */ 
+
+#buttonMinus,
+#buttonPlus{
+    margin: 1rem;
+}
+
+#buttonMinus:hover,
+#buttonPlus:hover{
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+

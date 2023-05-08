@@ -4,7 +4,7 @@ function hiddenToVisible(){
     const planet = document.getElementsByClassName('data');
     for(let planets of planet){
       if(planets.classList.contains('Planet')){
-        planets.classList.remove('Planet');
+        planets.classList.remove('Planet', 'planet_anim');
         planets.classList.add('hidden');
     }  
     }
@@ -12,6 +12,7 @@ function hiddenToVisible(){
 
     let firstSlider = planet[click];
     firstSlider.classList.add('Planet');
+    firstSlider.classList.add('planet_anim')
 }
 
 document.addEventListener('DOMContentLoaded', hiddenToVisible)
@@ -20,7 +21,8 @@ document.addEventListener('DOMContentLoaded', hiddenToVisible)
 
 function clickPlus(){
     if (click === 7){
-        click = 0
+        click = 0;
+        hiddenToVisible();
     } else {
         click = click + 1;
         hiddenToVisible();
@@ -32,6 +34,7 @@ function clickPlus(){
 function clickMinus(){
     if (click === 0){
         click = 7;
+        hiddenToVisible();
     } else {
         click = click - 1;
         hiddenToVisible();  

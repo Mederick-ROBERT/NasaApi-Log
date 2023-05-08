@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main_color : linear-gradient(60deg, #880606, #0b0b9b)
+}
+
 #Home {
     width: 13%;
     border: 1px solid black;
     height: 100vh;
     position: fixed;
-    background-image: linear-gradient(60deg, #880606, #0b0b9b);
+    background-image: var(--main_color);
 }
 
 #nasaLogo {
