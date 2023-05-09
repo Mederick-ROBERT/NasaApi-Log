@@ -97,7 +97,65 @@
     transition: 0.3s;
 }
 
-@media (max-width: 1310px){
+/* media query */
+
+@media(max-width : 768px){
+    #wrapper{
+        margin: 0;
+        height: auto;
+    }
+
+    .Planet{
+        padding-top: 2rem;
+        margin-bottom: 8rem;
+    }
+
+    .info{
+        align-items: center;
+    }
+
+    .planet_img {
+        width: 72%;
+    }
+
+    .title_Planet{
+        font-size: 3rem;
+    }
+
+    .title_for_info{
+        font-size: 1rem;
+    }
+
+    .info_of_Planete{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .text_info {
+        margin: 0;
+        font-size: 1.2rem;
+        background-color: rgba(209, 205, 205, 0.555);
+        padding: 1rem;
+        border-radius: 1rem;
+        text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    }
+
+    .planet_info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* position des bouttons */
+
+    #buttonMinus,
+    #buttonPlus{
+        position: sticky;
+        top: 22rem;
+    }
+
+}
+
+@media (min-width:769px) and (max-width: 1310px){
     #wrapper{
         margin: 0;
     }
