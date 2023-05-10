@@ -3,6 +3,7 @@ const body = document.querySelector('body');
 const toggleON = document.getElementById('toggle_on');
 const toggleOFF = document.getElementById('toggle_off');
 
+
 function change(){
     body.classList.toggle('whiteChange');
     body.classList.toggle('blackChange');

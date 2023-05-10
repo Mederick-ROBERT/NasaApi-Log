@@ -86,7 +86,7 @@
 
 /* media query */
 
-@media (max-width : 768px){
+@media (max-width : 900px){
     .toggle-button{
         display: inline;
     }

@@ -59,3 +59,25 @@
 		transform: translateX(0);
 	}
 }
+
+/* media query */
+
+@media(max-width: 1310px){
+    .blackHole_Button{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 5rem;
+        bottom: 0.3rem;
+    }
+}
+
+@media(max-width: 900px){
+    .blackHole_Button{
+        position: initial;
+    }
+
+    .hidden_blackHole_Button{
+        display: none;
+    }
+}
