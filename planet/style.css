@@ -82,6 +82,7 @@
     text-align: center;
     font-size: 1.3rem;
     font-family: 'Aref Ruqaa Ink', serif;
+    margin-bottom: 2rem;
 }
 
 /* arrow */ 
@@ -178,4 +179,23 @@
     }
 
 
+}
+
+@media(min-width: 1850px){
+    #wrapper{
+        height: auto;
+    }
+
+    .text_info{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .planet_img{
+        width: 35%;
+    }
+
+    body{
+        height: 100vh;
+    }
 }
