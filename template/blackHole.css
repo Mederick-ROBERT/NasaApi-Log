@@ -1,0 +1,61 @@
+#blackHole{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 1rem;
+}
+
+.blackHole_Button{
+    display: flex;
+    justify-content: center;
+}
+
+.blackChange{
+    transition: 0.8s;
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.whiteChange{
+    transition: 1.5s;
+    background-color: white;
+    color: black;
+}
+
+/* toggle */
+
+.hiddenToggle{
+    display: none;
+}
+
+.toggleON_entrance{
+    animation: toggleON_entrance 1s ease 0s 1 normal forwards;
+}
+
+@keyframes toggleON_entrance {
+	0% {
+		opacity: 0;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.toggleOFF_entrance{
+    animation: toggleOFF_entrance 1s ease 0s 1 reverse forwards;
+}
+
+@keyframes toggleOFF_entrance {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(0);
+	}
+}

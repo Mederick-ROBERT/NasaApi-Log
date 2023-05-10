@@ -9,7 +9,7 @@ include "../template/header.html"
 ?>
 
 
-<body>
+<body class="whiteChange">
     <section id="wrapper">
 
         <h1 id="titlePicture">Picture of the Day</h1>
@@ -35,3 +35,4 @@ include "../template/header.html"
 
 <script src="../JS/picture.js"></script>
 <script src="../JS/flout.js"></script>
+<script src="../JS/blackHole.js"></script>
