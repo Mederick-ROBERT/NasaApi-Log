@@ -34,4 +34,3 @@ include "../template/header.html"
 
 
 <script src="../JS/picture.js"></script>
-

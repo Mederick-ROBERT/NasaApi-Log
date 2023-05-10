@@ -52,10 +52,11 @@
 .toggle-button {
     position: absolute;
     display: none;
-    border: 3px solid red;
     border-radius: 1rem;
-    top: .75rem;
+    top: 0.9rem;
     right: 2rem; 
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0,0,0,0);
 }
 
 .active{
@@ -138,6 +139,8 @@
     }
 }
 
-@media (max-width : 768px){
+/* floutage commun */
 
-}
+ .filter{
+    filter: blur(4px);
+ }

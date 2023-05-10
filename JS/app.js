@@ -40,3 +40,4 @@ function clickMinus(){
         hiddenToVisible();  
     }
 }
+
