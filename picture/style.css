@@ -50,6 +50,28 @@
   box-shadow: 0.3rem 0.3rem 1.2rem;
 }
 
+/* media query */
+
+@media(max-width: 768px){
+  #info_picture{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #title{
+    width: 200%;
+    text-align: center;
+  }
+
+  #photographe{
+    text-align: center;
+  }
+
+  #titlePicture{
+    text-align: center;
+  }
+}
+
 @media (max-width : 1310px){
   #wrapper{
     margin: 0;

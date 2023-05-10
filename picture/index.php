@@ -34,3 +34,4 @@ include "../template/header.html"
 
 
 <script src="../JS/picture.js"></script>
+<script src="../JS/flout.js"></script>

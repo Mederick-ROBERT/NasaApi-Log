@@ -6,4 +6,5 @@ const list = document.getElementById('hiddenNavbar')
 function navbar(){
     list.classList.toggle('hiddenNavbar');
     list.classList.toggle('active');
+    list.classList.toggle('nav_entrance');
 }
