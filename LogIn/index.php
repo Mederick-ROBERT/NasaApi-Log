@@ -3,7 +3,8 @@
 </head>
 
 <?php
-include "../template/header.html"
+include "../template/header.html";
+
 ?>
 
 <body class="whiteChange">
@@ -51,7 +52,7 @@ include "../template/header.html"
                     <p class="noAccount">
                         Don't have an account ?
                     </p>
-                    <a href="#" id="signUp">Sign Up</a>
+                    <a href="../SignUp/index.php" id="signUp">Sign Up</a>
                 </div>
 
             </div>
@@ -59,7 +60,7 @@ include "../template/header.html"
             <div id="logInCard--Picture">
 
                 <div id="pictureLog">
-                    <img id="pictureLog--Astro" src="../image/Astronaute.png" alt="">
+                    <!-- <img id="pictureLog--Astro" src="../image/Astronaute.png" alt=""> -->
                 </div>
 
             </div>
