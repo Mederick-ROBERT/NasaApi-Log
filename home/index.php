@@ -3,6 +3,7 @@
  * Qu'est ce qu'il y aura dans mon home ?
  * 
  *  récap du profil -> création d'une page de profil + d'une page de connexion
+ *  https://lottiefiles.com/143987-gradient
  * 
  *  Latest Information sous forme d'un slider
  * 

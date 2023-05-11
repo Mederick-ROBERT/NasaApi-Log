@@ -4,6 +4,18 @@ const toggleON = document.getElementById('toggle_on');
 const toggleOFF = document.getElementById('toggle_off');
 
 
+window.addEventListener('load' , function(){
+    let bodyTheme = localStorage.getItem('theme')
+    if(bodyTheme == 'dark'){
+        body.classList.remove('whiteChange');
+        body.classList.add('blackChange');
+        toggleON.classList.toggle('hiddenToggle');
+        toggleOFF.classList.toggle('hiddenToggle');
+    }
+})
+
+
+
 function change(){
     body.classList.toggle('whiteChange');
     body.classList.toggle('blackChange');
@@ -14,4 +26,20 @@ function change(){
 }
 
 changeButton.addEventListener('click', change)
+
+const theme = {
+
+    init : function(){
+
+        toggleON.addEventListener('click', function(){
+            localStorage.setItem('theme', 'white');
+        })
+
+        toggleOFF.addEventListener('click', function(){
+            localStorage.setItem('theme', 'dark')
+        })
+    }
+}
+
+theme.init();
 
