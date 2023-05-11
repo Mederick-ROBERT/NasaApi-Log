@@ -141,6 +141,66 @@
     font-size: 1.1rem;
 }
 
+/* media query */
+
+@media(max-width : 1310px){
+    #wrapper{
+        margin: 0;
+        padding-bottom: 8%;
+    }
+}
+
+@media(max-width : 900px){
+    #wrapper{
+        height: auto;
+    }
+
+    #container{
+        height: 110%;
+        margin-bottom: 1.5rem;
+    }
+
+    #loginCard{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #pictureLog{
+        height: 25%;
+        width: 100%;
+        border-radius: 2rem 2rem 0rem 0rem;
+        background-attachment: fixed;
+        background-image: url(../image/Astronaute--responsive.png);
+        background-size: contain;
+    }
+
+    #logInCard--Info{
+        margin: 2rem;
+        width: 100%;
+    }
+}
+
+@media(max-width : 450px){
+    #container{
+        margin-bottom: 5rem;
+    }
+
+    #logInCard--Info{
+        margin: 2rem;
+        margin-top: 0;
+        width: 200%;
+    }
+
+    #principalTitle {
+        font-size: 3rem;
+    }
+
+    #pictureLog{
+        background-size: auto;
+    }
+}
 
 
 

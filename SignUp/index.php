@@ -17,8 +17,6 @@ include "../template/header.html";
 
             <div id="logInCard--Info">
 
-                <h1 id="principalTitle">Hello There !</h1>
-                <h4 id="welcomeTitle">Welcome to the NasaAPI-Log !</h4>
                 <h4 id="createTitle">Create Your Account</h4>
 
 

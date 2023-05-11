@@ -101,7 +101,7 @@
 
 /* media query */
 
-@media (max-width : 900px){
+@media (max-width : 1000px){
     .toggle-button{
         display: inline;
     }
@@ -131,6 +131,10 @@
         align-items: center;
     }
 
+    #logIn{
+        bottom: 37%;
+        left: 15%;
+    }
 }
 
 
@@ -173,6 +177,11 @@
 
     .home_List_Container {
         align-items: center;
+    }
+
+    #logIn{
+        bottom: 37%;
+        right: 13%;
     }
 }
 
