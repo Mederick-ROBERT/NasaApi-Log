@@ -47,6 +47,21 @@
     margin-left: 1rem;
 }
 
+/* Log */
+
+#logIn{
+    position: absolute;
+    bottom: 13%;
+}
+
+#logLinks{
+    color: #f5deb3;
+    text-decoration: none;
+    padding-left: 2rem;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 1.3rem;
+}
+
 /* button navbar */
 
 .toggle-button {
