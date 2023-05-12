@@ -1,5 +1,11 @@
 <head>
     <link rel="stylesheet" href="./style.css">
+
+    <meta name="google-signin-client_id" content="200504414713-2eul6gujkfmfegiep91h2ea4a5htmorv.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../JS/google.js"></script>
 </head>
 
 <?php
@@ -20,9 +26,17 @@ include "../template/header.html";
                 <h1 id="principalTitle">Hello There !</h1>
                 <h4 id="welcomeTitle">Welcome to the NasaAPI-Log !</h4>
         
-                <div id="googleLog">
+                <!-- <div id="googleLog">
                     <img src="../image/google.svg" alt="">
                     <a href="#" id="googleLinks">Log In With Google</a>
+                </div> -->
+
+                <div id="bloc_page">
+
+                    <div id="gSignIn"></div>		
+                    <div class="userContent"></div>
+
+                                        
                 </div>
         
         
