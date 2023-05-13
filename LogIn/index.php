@@ -1,15 +1,14 @@
 <head>
     <link rel="stylesheet" href="./style.css">
 
-    <meta name="google-signin-client_id" content="200504414713-2eul6gujkfmfegiep91h2ea4a5htmorv.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/api.js"></script>
-    <script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../JS/google.js"></script>
 </head>
 
 <?php
 include "../template/header.html";
+
+require "./config.php";
+
+require "./googleReturn.php";
 
 ?>
 
@@ -25,18 +24,30 @@ include "../template/header.html";
 
                 <h1 id="principalTitle">Hello There !</h1>
                 <h4 id="welcomeTitle">Welcome to the NasaAPI-Log !</h4>
+
+                <!-- Ancien bloc de connexion => a essayer de reproduire  -->
         
                 <!-- <div id="googleLog">
                     <img src="../image/google.svg" alt="">
                     <a href="#" id="googleLinks">Log In With Google</a>
                 </div> -->
 
-                <div id="bloc_page">
+                <div id="g_id_onload"
+                    data-client_id="200504414713-2eul6gujkfmfegiep91h2ea4a5htmorv.apps.googleusercontent.com"
+                    data-context="signin"
+                    data-ux_mode="popup"
+                    data-login_uri="http://localhost/NasaApi-Log/home/index.php"
+                    data-auto_prompt="false">
+                </div>
 
-                    <div id="gSignIn"></div>		
-                    <div class="userContent"></div>
-
-                                        
+                <div class="g_id_signin"
+                    data-type="standard"
+                    data-shape="pill"
+                    data-theme="outline"
+                    data-text="signin_with"
+                    data-size="large"
+                    data-locale="en"
+                    data-logo_alignment="left">
                 </div>
         
         
@@ -74,7 +85,7 @@ include "../template/header.html";
             <div id="logInCard--Picture">
 
                 <div id="pictureLog">
-                    <!-- <img id="pictureLog--Astro" src="../image/Astronaute.png" alt=""> -->
+                    
                 </div>
 
             </div>
@@ -86,8 +97,11 @@ include "../template/header.html";
     
 </section>
 
-</body>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 
 <script src="../JS/flout.js"></script>
 <script src="../JS/blackHole.js"></script>
 <script src="../JS/logHidden.js"></script>
+
+</body>
+
