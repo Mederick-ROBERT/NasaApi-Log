@@ -1,0 +1,42 @@
+#wrapper{
+    margin-left: 13%;
+    height: 100vh;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    background-image: url(../image/univers3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#profilCard {
+    border-radius: 2rem;
+    box-shadow: 0.3rem 0.3rem 1.2rem white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#profilInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#profilPicture {
+    width: 30%;
+    border-radius: 10rem;
+}

@@ -6,7 +6,8 @@
 if(!empty($_POST['credential'])){
 
     if(empty($_COOKIE['g_csrf_token']) || empty($_POST['g_csrf_token']) || $_COOKIE['g_csrf_token'] != $_POST['g_csrf_token']){
-        echo "Erreur vérification jeton CSRF";
+        // echo "Erreur vérification jeton CSRF";
+        header('location:../LogIn/index.php');
         exit();
     }
 
@@ -28,14 +29,12 @@ if(!empty($_POST['credential'])){
     // print_r($payload);
 
     if ($payload) {
-        // $_SESSION['user'] = $payload;
 
         $str = JSON_encode($payload);
         
 
-        setcookie('info', $str);
+        setcookie('info', $str, time()+3600*2);
 
-        // header("http://localhost/mutipage/NasaApi-Log/home/index.php");
         
         // If request specified a G Suite domain:
         //$domain = $payload['hd'];
