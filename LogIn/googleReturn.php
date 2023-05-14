@@ -17,6 +17,9 @@ if(!empty($_POST['credential'])){
 
     $client = new Google_Client(['client_id' => $clientID]);  // Specify the CLIENT_ID of the app that accesses the backend
 
+    $guzzleClient = new \GuzzleHttp\Client(array( 'curl' => array( CURLOPT_SSL_VERIFYPEER => false, ), )); // empeche l'erreur guzzle (?) ... Temporaire !!
+    $client->setHttpClient($guzzleClient);
+
     $idToken = $_POST['credential'];
     $payload = $client->verifyIdToken($idToken);
 
@@ -27,7 +30,7 @@ if(!empty($_POST['credential'])){
     if ($payload) {
         $_SESSION['user'] = $payload;
 
-        // header("http://localhost/NasaApi-Log/home/index.php");
+        header("http://localhost/mutipage/NasaApi-Log/home/index.php");
         
         // If request specified a G Suite domain:
         //$domain = $payload['hd'];

@@ -24,7 +24,9 @@
 include "../template/header.html";
 
 include "../vendor/autoload.php";
+
 include "../LogIn/googleReturn.php";
+
 ?>
 
 
@@ -37,8 +39,11 @@ include "../LogIn/googleReturn.php";
         <h1 id="principalTitle">NasaAPI-Log</h1>
     </div>
 
+
+    <img src="<?= $payload['picture'] ?>" alt="">
     <?php
     echo $payload['given_name'];
+    echo $payload['email'];
     ?>
 
 </section>

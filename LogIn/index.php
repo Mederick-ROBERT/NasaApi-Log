@@ -36,7 +36,7 @@ require "./googleReturn.php";
                     data-client_id="200504414713-2eul6gujkfmfegiep91h2ea4a5htmorv.apps.googleusercontent.com"
                     data-context="signin"
                     data-ux_mode="popup"
-                    data-login_uri="http://localhost/NasaApi-Log/home/index.php"
+                    data-login_uri="http://localhost/mutipage/NasaApi-Log/home/index.php"
                     data-auto_prompt="false">
                 </div>
 
