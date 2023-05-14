@@ -16,6 +16,7 @@
 
 <head>
     <link rel="stylesheet" href="./style.css">
+
 </head>
 
 
@@ -23,9 +24,6 @@
 <?php
 include "../template/header.html";
 
-include "../vendor/autoload.php";
-
-include "../LogIn/googleReturn.php";
 
 ?>
 
@@ -40,11 +38,7 @@ include "../LogIn/googleReturn.php";
     </div>
 
 
-    <img src="<?= $payload['picture'] ?>" alt="">
-    <?php
-    echo $payload['given_name'];
-    echo $payload['email'];
-    ?>
+    
 
 </section>
 

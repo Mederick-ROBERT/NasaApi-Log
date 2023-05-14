@@ -28,9 +28,14 @@ if(!empty($_POST['credential'])){
     // print_r($payload);
 
     if ($payload) {
-        $_SESSION['user'] = $payload;
+        // $_SESSION['user'] = $payload;
 
-        header("http://localhost/mutipage/NasaApi-Log/home/index.php");
+        $str = JSON_encode($payload);
+        
+
+        setcookie('info', $str);
+
+        // header("http://localhost/mutipage/NasaApi-Log/home/index.php");
         
         // If request specified a G Suite domain:
         //$domain = $payload['hd'];
@@ -41,6 +46,7 @@ if(!empty($_POST['credential'])){
     }
 
     
-}
+} 
 
 ?>
+
