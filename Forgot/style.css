@@ -1,0 +1,99 @@
+#wrapper{
+    margin-left: 13%;
+    height: 100vh;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+#forgotCard {
+    border-radius: 2rem;
+    box-shadow: 0.3rem 0.3rem 1.2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* picture */
+
+#forgotPicture {
+    background-image: url(../image/Astronaute.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0rem 2rem 2rem 0rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 45%;
+}
+
+#forgotCard--Info {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* media query */
+
+@media(max-width : 1310px){
+    #wrapper{
+        margin: 0;
+        padding-bottom: 8%;
+    }
+}
+
+@media(max-width : 900px){
+    #wrapper{
+        height: auto;
+    }
+
+    #container{
+        height: 110%;
+        margin-bottom: 1.5rem;
+    }
+
+    #forgotCard{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #forgotPicture{
+        height: 25%;
+        width: 100%;
+        border-radius: 2rem 2rem 0rem 0rem;
+        background-attachment: fixed;
+        background-image: url(../image/Astronaute--responsive.png);
+        background-size: contain;
+    }
+
+    #forgotCard--Info{
+        margin: 2rem;
+        width: 100%;
+    }
+}
+
+@media(max-width : 450px){
+    #container{
+        margin-bottom: 5rem;
+    }
+
+    #forgotCard--Info{
+        margin: 2rem;
+        margin-top: 0;
+        width: 200%;
+    }
+
+    #forgotPicture{
+        background-size: auto;
+    }
+}

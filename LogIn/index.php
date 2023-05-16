@@ -72,7 +72,7 @@ require "./googleReturn.php";
                 </div>
         
                 <div id="forgot">
-                    <a href="#" id="forgotPass">Forgot Password ?</a>
+                    <a href="../Forgot/index.php" id="forgotPass">Forgot Password ?</a>
                 </div>
         
                 <div id="logInInApp">
