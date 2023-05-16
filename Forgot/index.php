@@ -22,6 +22,8 @@ $result = $request->fetch(PDO::FETCH_ASSOC);
 // var_dump($result);
 // echo $result['emailProfil'];
 
+var_dump($_POST);
+
 if(!empty($_POST)){
     if(isset($_POST['email'])){
         if(!empty($_POST['email'])){
@@ -39,9 +41,25 @@ if(!empty($_POST)){
 foreach($result as $emailResult){
     if($emailResult === $email){
         echo "yes";
+
+        // Utilisation de php mailer
+
+
+        // utilisation de php sendmail
+
+        // if(mail($email, 'Changement de mot de passe', 'code de vérification :', 'From : man.crepe56@gmail.com')){
+        //     echo "mail bien envoyer";
+        // } else {
+        //     echo "mail non-envoyer";
+        // }
+        $email = "...";
     } else {
         echo "no";
     }
+}
+
+if($number != 10){
+    $email = "...";
 }
 
 ?>
