@@ -60,6 +60,15 @@
 
 /* input for log */
 
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
 #googleLog,
 #email,
 #password {

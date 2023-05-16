@@ -3,14 +3,19 @@
 
 </head>
 
+
+
 <?php
 include "../template/header.html";
+
+/* fichier pour les google log */
 
 require "./config.php";
 
 require "./googleReturn.php";
 
 ?>
+
 
 <body class="whiteChange">
    
@@ -22,15 +27,13 @@ require "./googleReturn.php";
 
             <div id="logInCard--Info">
 
+                <?php
+                require "./bddLog.php";
+                ?>
+
                 <h1 id="principalTitle">Hello There !</h1>
                 <h4 id="welcomeTitle">Welcome to the NasaAPI-Log !</h4>
 
-                <!-- Ancien bloc de connexion => a essayer de reproduire  -->
-        
-                <!-- <div id="googleLog">
-                    <img src="../image/google.svg" alt="">
-                    <a href="#" id="googleLinks">Log In With Google</a>
-                </div> -->
 
                 <div id="g_id_onload"
                     data-client_id="200504414713-2eul6gujkfmfegiep91h2ea4a5htmorv.apps.googleusercontent.com"
@@ -57,6 +60,9 @@ require "./googleReturn.php";
                     <hr class="hr">
                 </div>
         
+
+                <form method="post">
+
                 <div id="email">
                     <input type="email" name="email" id="yourEmail" placeholder="Your email ...">
                 </div>
@@ -79,6 +85,9 @@ require "./googleReturn.php";
                     </p>
                     <a href="../SignUp/index.php" id="signUp">Sign Up</a>
                 </div>
+
+                </form>
+                
 
             </div>
 
