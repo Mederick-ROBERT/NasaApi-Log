@@ -16,14 +16,14 @@ if(!empty($_POST)){
             $email = $_POST['email'];
             $pass = $_POST['pass'];
 
-            // insertion des valeur en bdd
+            // inscription de la requete
 
-            $sql = 'INSERT INTO `profil` (nameProfil, usernameProfil, emailProfil, passwordProfil) VALUES (:name, :username; :email, :pass)';
+            $sql = 'INSERT INTO `profil` (`nameProfil`, `usernameProfil`, `emailProfil`, `passwordProfil`) VALUES (:name, :username, :email, :pass)';
 
             // preparation de la requete
-            $query->prepare($sql);
+            $query = $conn->prepare($sql);
 
-            // insertion des valeur en variable
+            // injection des valeur
             $query->bindValue(":name", $name);
             $query->bindValue(":username", $username);
             $query->bindValue(":email", $email);
@@ -31,7 +31,9 @@ if(!empty($_POST)){
 
             // execution de la requete
             $query->execute();
-            header("location : ../home/index.php");
+
+            header("location: ../home/index.php");
+            exit();
 
         } else {
             echo "informations manquantes ou invalides";
