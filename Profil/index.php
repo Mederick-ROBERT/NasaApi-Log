@@ -60,6 +60,7 @@ include "../LogIn/googleReturn.php";
 
 <script src="../JS/flout.js"></script>
 <script src="../JS/blackHole.js"></script>
+<script src="../JS/logHidden.js"></script>
 
 </body>
 
