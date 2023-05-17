@@ -36,18 +36,39 @@ if(!empty($_POST)){
 
 $i = 0;
 
-foreach($result as $connexion){
-    $emailRequest = $result[$i]['emailProfil'];
-    $passRequest = $result[$i]['passwordProfil'];
+if(!empty($_POST)){
 
-    if($email == $emailRequest && $pass == $passRequest){
-        header("location: ../home/index.php");
-        break;
-    } else {
-        $i++;
-        echo "Mauvaise identification.";
-    }
+   foreach($result as $connexion){
+        $emailRequest = $result[$i]['emailProfil'];
+        $passRequest = $result[$i]['passwordProfil'];
+
+        $str = [
+            "email" => $emailRequest,
+            "pass" => $passRequest,
+        ];
+
+        if($email == $emailRequest && $pass == $passRequest){
+
+            $encode = json_encode($str);
+            
+            setcookie("conn", $encode, time()+3600*2, "/");
+
+            header("location: ../Profil/index.php");
+
+            unset($email);
+            unset($pass);
+
+            break;
+        } else {
+            $i++;
+        }
+    } 
+
+    echo "mauvaise identification";
+
 }
+
+
 
 
 

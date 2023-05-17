@@ -24,7 +24,6 @@
 <?php
 include "../template/header.html";
 
-
 ?>
 
 
@@ -36,7 +35,6 @@ include "../template/header.html";
         <img class="principalLogo" src="../image/NASA_logo.png" alt="">
         <h1 id="principalTitle">NasaAPI-Log</h1>
     </div>
-
 
     
 

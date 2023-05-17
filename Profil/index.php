@@ -1,6 +1,7 @@
 <?php
 
-// Vrification du profil
+// Vérification du profil
+
 
 include "../template/header.html";
 
@@ -8,15 +9,8 @@ include "../vendor/autoload.php";
 
 include "../LogIn/googleReturn.php";
 
+include "./cookie.php";
 
-    if(empty($_COOKIE['info'])){
-        header('location:../LogIn/index.php');
-    } else {
-        $string = $_COOKIE['info'];
-        $payload = json_decode($string);
-    }
-
-    
 ?>
 
 <head>
@@ -27,9 +21,7 @@ include "../LogIn/googleReturn.php";
 <body class="whiteChange">
 
 <section id="wrapper">
-
     
-
     <div id="container">
 
         <div id="profilCard">
@@ -42,6 +34,7 @@ include "../LogIn/googleReturn.php";
             <div id="profilInfo">
 
                 <h3 id="profilName"><?= $payload->name ?></h3>
+                <h3 id="profilName"><?= $result->email ?></h3>
                 <?php
                 // echo $payload->given_name;
                 // echo $payload->email;
