@@ -22,6 +22,19 @@
     position: relative;
 }
 
+#profilInfo--Card {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 5rem;
+    background-color: #f5deb357;
+    color: white;
+}
+
 #picture{
     display: flex;
     justify-content: center;
@@ -39,4 +52,28 @@
 #profilPicture {
     width: 30%;
     border-radius: 10rem;
+}
+
+/* picture */
+
+#loopPicture {
+    border-radius: 20rem;
+    border: 1px solid white;
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5deb357;
+}
+
+#spaceman {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#spacemanPicture {
+    width: 110%;
 }
