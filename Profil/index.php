@@ -15,7 +15,6 @@ include "./cookie.php";
 
 <head>
     <link rel="stylesheet" href="./style.css">
-
 </head>
 
 <body class="whiteChange">
@@ -35,20 +34,44 @@ include "./cookie.php";
                 endif;
                 ?>
 
-<?php
-                if($result != null):
+                <?php
+                    if($result != null):
                 ?>
                 <div id="loopPicture">
                     <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                     <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_oTxIKY4Uu6.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player> -->
                     <div id="spaceman">
-                        <img id="spacemanPicture" src="../image/spaceman/moonSpaceMan2.png" alt="">
+                        <img id="spacemanPicture" src="../image/spaceman/moonSpaceMan<?= $emailResult['pictureProfil'] ?>.png" alt="">
+                    </div>
+
+                    <div id="changePicture">
+                        <button id="changePicture--Button"><img src="../image/dots.svg" alt=""></button>
                     </div>
                 </div>
                 <?php
-                endif;
+                    endif;
                 ?>
                 
+                <div id="changePicture--slider" class="hiddenSlider">
+
+                <section class="slider">
+        
+                    <button id="buttonLeft" onclick="clicLeft()" type="button" >&lt;</button>
+
+                    <!-- <img src="../image/spaceman/moonSpaceMan1.png" class="activeImg sliderPicture" alt="">
+                    <img src="../image/spaceman/moonSpaceMan2.png" class="hiddenSlider sliderPicture" alt="">
+                    <img src="../image/spaceman/moonSpaceMan3.png" class="hiddenSlider sliderPicture" alt=""> -->
+
+                    <div class="slider--picture">
+
+                    </div>
+
+                    <button id="buttonRight" onclick="clicRight()" type="button" >&gt;</button>
+
+                </section>
+
+                </div>
+
             </div>
 
 
@@ -70,9 +93,9 @@ include "./cookie.php";
                         if($result != null):
                     ?>
 
-                    <h2 id="profilName"><?= $emailResult['usernameProfil'] ?></h2>
+                    <h2 id="profilName"><?= strip_tags($emailResult['usernameProfil']) ?></h2>
 
-                    <h3 id="profilName"><?= $emailResult['emailProfil'] ?></h3>
+                    <h3 id="profilName"><?= strip_tags($emailResult['emailProfil']) ?></h3>
                     
                     <?php
                         endif;
@@ -88,10 +111,10 @@ include "./cookie.php";
 
 </section>  
 
+<script src="../JS/profil.js"></script>
 <script src="../JS/flout.js"></script>
 <script src="../JS/blackHole.js"></script>
 <script src="../JS/logHidden.js"></script>
-
 </body>
 
 

@@ -3,6 +3,10 @@
     height: 100vh;
 }
 
+:root{
+    --color: #f5deb357;
+}
+
 #container {
     width: 100%;
     height: 100%;
@@ -31,15 +35,16 @@
     flex-direction: column;
     border: 1px solid white;
     border-radius: 5rem;
-    background-color: #f5deb357;
+    background-color: var(--color);
     color: white;
 }
 
 #picture{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 50%;
+    flex-direction: column;
 }
 
 #profilInfo{
@@ -61,11 +66,12 @@
     border: 1px solid white;
     width: 20rem;
     height: 20rem;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5deb357;
+    background-color: var(--color);
+    position: relative;
 }
 
 #spaceman {
@@ -76,4 +82,77 @@
 
 #spacemanPicture {
     width: 110%;
+}
+
+#changePicture {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    border: 1px solid black;
+    background-color: #000000c2;
+    border-radius: 10rem;
+    bottom: 0;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#changePicture--Button {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    width: 100%;
+}
+
+#changePicture:hover {
+    transition: 0.3s;
+    transform: scale(1.15);
+}
+
+/* slider */
+
+.hiddenSlider{
+    display: none;
+}
+
+.activeImg {
+    width: 50%;
+}
+
+.slider--picture,
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+#changePicture--slider {
+    width: 80%;
+    height: 30%;
+    border: 1px solid white;
+    border-radius: 5rem;
+    background-color: var(--color);
+}
+
+#buttonLeft,
+#buttonRight {
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    padding: 0.5rem;
+    display: inline-block;
+    background-color: rgba(0,0,0,0);
+    z-index: 2;
+    font-weight: bold;
+    position: relative;
+    font-size: 1.3rem;
+}
+
+#buttonLeft:hover,
+#buttonRight:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
 }
